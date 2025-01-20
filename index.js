@@ -3,7 +3,8 @@ function init() {
     get: (searchParams, prop) => searchParams.get(prop),
   });
 
-  console.log(params)
+  const allParams = params.getAll()
+  console.log(allParams)
 }
 
 init()
